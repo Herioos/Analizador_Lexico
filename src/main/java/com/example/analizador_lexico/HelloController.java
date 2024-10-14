@@ -256,6 +256,7 @@ public class HelloController implements Initializable {
             }
         }
         List<Analisis> lista_expresiones = tblResultado.getItems();
+
         estructura(lista_expresiones);
         if (!texto_error.isEmpty()) {
             Alert alerta = new Alert(Alert.AlertType.ERROR);
@@ -264,6 +265,7 @@ public class HelloController implements Initializable {
             alerta.showAndWait();
         }
         verificacion_semantica(lista_expresiones);
+
         if (!tblResultado.getItems().isEmpty()) {
             btnSemantico.setDisable(false);
         } else {
@@ -1714,6 +1716,10 @@ public class HelloController implements Initializable {
     }
 
     public void OnbtnSemantico(ActionEvent actionEvent) {
+        new semantico(this);
+    }
+    public ObservableList<Analisis> getListaExpresiones() {
+        return tblResultado.getItems();
     }
 }
 
