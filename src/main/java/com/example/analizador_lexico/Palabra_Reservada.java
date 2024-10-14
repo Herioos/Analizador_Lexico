@@ -1,0 +1,68 @@
+package com.example.analizador_lexico;
+
+import java.util.ArrayList;
+
+public class Palabra_Reservada {
+    public boolean isPalabraReservada(String palabra){
+        switch (palabra){
+            case "byte",
+                    "short",
+                    "int",
+                    "long",
+                    "char",
+                    "float",
+                    "double",
+                    "boolean",
+                    "void",
+                    "if",
+                    "else",
+                    "switch",
+                    "case",
+                    "default",
+                    "while",
+                    "do",
+                    "for",
+                    "break",
+                    "continue",
+                    "try",
+                    "catch",
+                    "finally",
+                    "throw",
+                    "throws",
+                    "private",
+                    "protected",
+                    "public",
+                    "class",
+                    "interface",
+                    "enum",
+                    "import",
+                    "package",
+                    "extends",
+                    "implements",
+                    "static",
+                    "final",
+                    "abstract",
+                    "new",
+                    "instanceof",
+                    "this",
+                    "super",
+                    "return",
+                    "var",
+                    "synchronized",
+                    "volatile",
+                    "native",
+                    "transient",
+                    "assert",
+                    "strictfp",
+                    "const",
+                    "goto",
+                    "true",
+                    "false",
+                    "null",
+                    "System",
+                    "out",
+                    "String": return true;
+            default: return false;
+        }
+    }
+}
