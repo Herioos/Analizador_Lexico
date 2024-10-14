@@ -1,0 +1,8 @@
+.text-area {
+    -fx-font-family: "Consolas";
+    -fx-font-size: 12px;
+    -fx-control-inner-background: #1E1E1E; /* Fondo oscuro */
+    -fx-text-fill: #D4D4D4;       /* Texto de color claro */
+    -fx-highlight-fill: #264F78;  /* Color de la selección */
+    -fx-highlight-text-fill: white; /* Color del texto seleccionado */
+}

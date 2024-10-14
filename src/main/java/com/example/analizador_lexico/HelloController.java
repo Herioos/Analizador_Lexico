@@ -2,6 +2,7 @@ package com.example.analizador_lexico;
 
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.*;
@@ -18,6 +19,9 @@ public class HelloController implements Initializable {
 
     @FXML
     private Button btnFile;
+    @FXML
+    private Button btnSemantico;
+
 
     @FXML
     private TableColumn<Analisis, String> tblColumnColumna;
@@ -46,6 +50,8 @@ public class HelloController implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
+        btnSemantico.setDisable(true);
+
         // Manejar el evento de teclado cuando se presiona Enter
         txtCode.setOnKeyPressed(event -> {
             if (event.getCode() == KeyCode.ENTER) {
@@ -258,6 +264,11 @@ public class HelloController implements Initializable {
             alerta.showAndWait();
         }
         verificacion_semantica(lista_expresiones);
+        if (!tblResultado.getItems().isEmpty()) {
+            btnSemantico.setDisable(false);
+        } else {
+            btnSemantico.setDisable(true);
+        }
     }
 
     public void verificacion_semantica(List<Analisis> lista_expresiones) {
@@ -1702,6 +1713,8 @@ public class HelloController implements Initializable {
         //  c++;
     }
 
+    public void OnbtnSemantico(ActionEvent actionEvent) {
+    }
 }
 
 

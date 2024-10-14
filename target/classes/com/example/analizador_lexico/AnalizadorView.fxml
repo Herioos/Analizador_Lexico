@@ -5,18 +5,17 @@
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextArea?>
-<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.analizador_lexico.HelloController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="1000.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.analizador_lexico.HelloController">
    <children>
       <Label layoutX="369.0" layoutY="22.0" text="Analizador Léxico">
          <font>
             <Font name="Cooper Black" size="34.0" />
          </font>
       </Label>
-      <Button fx:id="btnCompilar" layoutX="87.0" layoutY="594.0" mnemonicParsing="false" onAction="#compilar" prefHeight="27.0" prefWidth="233.0" text="Compilar">
+      <Button fx:id="btnCompilar" layoutX="51.0" layoutY="502.0" mnemonicParsing="false" onAction="#compilar" prefHeight="27.0" prefWidth="233.0" text="Compilar">
          <font>
             <Font name="Lucida Bright Demibold" size="12.0" />
          </font>
@@ -43,12 +42,9 @@
             <TableColumn fx:id="tblColumnColumna" prefWidth="117.5" text="Columna" />
         </columns>
       </TableView>
-      <Label layoutX="83.0" layoutY="413.0" text="Cargar archivo de texto">
+      <Button fx:id="btnSemantico" layoutX="35.0" layoutY="421.0" mnemonicParsing="false" onAction="#OnbtnSemantico" prefHeight="26.0" prefWidth="181.0" text=" Análisar semánticamente">
          <font>
-            <Font name="Times New Roman Bold" size="23.0" />
-         </font>
-      </Label>
-      <Button fx:id="btnFile" layoutX="85.0" layoutY="520.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="240.0" text="Cargar archivo" />
-      <TextField fx:id="txtFile" layoutX="79.0" layoutY="470.0" prefHeight="25.0" prefWidth="244.0" />
+            <Font name="Lucida Bright Demibold" size="12.0" />
+         </font></Button>
    </children>
 </AnchorPane>
