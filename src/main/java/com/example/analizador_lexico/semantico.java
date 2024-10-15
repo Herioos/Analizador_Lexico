@@ -30,7 +30,7 @@ public class semantico {
             System.out.println("--------------------");  // Separador entre cada análisis
         }
         verificarTipos(lista_expresiones);
-        verificarOperaciones(lista_expresiones);// Llama a verificarTipos
+        //verificarOperaciones(lista_expresiones);// Llama a verificarTipos
     }
 
 
