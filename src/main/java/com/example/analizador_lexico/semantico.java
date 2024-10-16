@@ -249,6 +249,7 @@ public class semantico {
     private static class hola {
         // cambios hola
         // edededdedeeed
+        // 548488
     }
 
     // Aquí va el código para verificar el alcance de las variables y funciones.
