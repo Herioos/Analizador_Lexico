@@ -247,7 +247,7 @@ public class semantico {
     // 3. Control de alcance (Scope)
 
     private static class hola {
-        // cambios xxx
+        // cambios hola
     }
 
     // Aquí va el código para verificar el alcance de las variables y funciones.
